@@ -1,7 +1,32 @@
+import Home from "./pages/Home";
+import Actors from "./pages/Actors";
+import Directors from "./pages/Directors";
+import Movie from "./pages/Movie";
+import ErrorPage from "./pages/ErrorPage";
+
+export const routeArray = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/Actors",
+    element: <Actors />,
+  },
+  {
+    path: "/Directors",
+    element: <Directors />,
+  },
+  {
+    path: "/Movie/:id",
+    element: <Movie />,
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
 
 
-const routes = [
-   
-  ];
+];
 
-export default routes;
+export default routeArray;
